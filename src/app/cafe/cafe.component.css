@@ -1,0 +1,25 @@
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    text-align: left;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: "Papyrus", "Courier New", monospace;
+  }
+img {
+    margin:05px 05px;
+    max-width: 100%;
+    height: auto;
+}
+.line {
+    border-bottom: 3px solid #888;
+    margin:05px 05px;
+}
+p {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
