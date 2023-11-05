@@ -11,24 +11,26 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col">
-          <table class="table">
-            <thead class="table table-sm table-dark">
-              <tr>
-                <th class="text-start" scope="col">#</th>
-                <th class="text-start" scope="col">Nombre</th>
-                <th class="text-start" scope="col">Tipo</th>
-                <th class="text-start" scope="col">Region</th>
+            <div class="table-responsive">
+            <table class="table table-fit">
+              <thead class="table table-sm table-dark">
+                <tr>
+                  <th class="text-start" scope="col">#</th>
+                  <th class="text-start" scope="col">Nombre</th>
+                  <th class="text-start" scope="col">Tipo</th>
+                  <th class="text-start" scope="col">Region</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let cafe of cafes">
+                  <td class="text-start"><dd><figcaption>{{cafe.id}}</figcaption></dd></td>
+                  <td class="text-start"><dd><figcaption>{{cafe.nombre}}</figcaption></dd></td>
+                  <td class="text-start"><dd><figcaption>{{cafe.tipo}}</figcaption></dd></td>
+                  <td class="text-start"><dd><figcaption>{{cafe.region}}</figcaption></dd></td>
               </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let cafe of cafes">
-                <td class="text-start"><dd><figcaption>{{cafe.id}}</figcaption></dd></td>
-                <td class="text-start"><dd><figcaption>{{cafe.nombre}}</figcaption></dd></td>
-                <td class="text-start"><dd><figcaption>{{cafe.tipo}}</figcaption></dd></td>
-                <td class="text-start"><dd><figcaption>{{cafe.region}}</figcaption></dd></td>
-            </tr>
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
         <p>Total cafe blend: {{countCafesByTipo('Blend')}}</p>
         <p>Total cafe Café de Origen: {{countCafesByTipo('Café de Origen')}}</p>
